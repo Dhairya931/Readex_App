@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .containers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border:none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .courses{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap:10px;
+    width: 100%;
+  }
+  
+  .item{
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition:  0.4s ease, box-shadow 0.3s ease;
+  }
+  
+  .item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .course-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .course-name {
+    font-size: 20px;
+    font-weight: 800;
+    color:#333;
+    margin-bottom: 5px;
+  }
+  
+  .course-instructor {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .course-like {
+    font-size: 16px;
+    color: blue;;
+    font-weight: bold;
+  }
+@media (max-width:768px){
+  .courses{
+    flex-direction: column;
+  }
+}
